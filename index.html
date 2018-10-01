@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>The Calculator</title>
+   <style>
+     h1{
+       color: red;
+       padding: 40px;
+       background: yellow;
+     }
+   #total{
+     color: green;
+     margin-top: 30px;
+   }
+   .input{
+     height: 40px;
+     background: yellow;
+     padding: 5px;
+     border-radius: 10px;
+   }
+   button{
+    height: 40px;
+    background:red;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border-radius: 10px;
+   }
+  </style>
+ </head>
+ <body>
+ <h1> Calculator </h1>
+    <input type="text" class="input" name="number_1" id="number_1"  placeholder="number 1"/> + 
+    <input type="text" class="input" name="number_2" id="number_2" placeholder="number 2"/>
+    <br>
+    <button type="button" id="calculate">Calculate</button>
+    <div id="total">
+
+    </div>
+
+<script>
+
+
+  document.getElementById('calculate').addEventListener('click', handleCalculation)
+
+
+  function handleCalculation() {
+    var num1 =document.getElementById('number_1').value;
+    var num2 = document.getElementById('number_2').value;
+    var total = ( num1 + num2);
+    var num1 = document.getElementById('total').innerHTML = total;
+  }
+
+
+</script>
+</body>
+</html>
