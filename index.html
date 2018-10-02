@@ -4,13 +4,13 @@
    <title>The Calculator</title>
    <style>
      h1{
-       color: red;
+       color: pink;
        padding: 40px;
-       background: yellow;
+       background: blue;
      }
    #total{
-     color: green;
-     margin-top: 30px;
+     color: blue;
+     margin-top: 50px;
    }
    .input{
      height: 40px;
@@ -30,8 +30,8 @@
  </head>
  <body>
  <h1> Calculator </h1>
-    <input type="text" class="input" name="number_1" id="number_1"  placeholder="number 1"/> + 
-    <input type="text" class="input" name="number_2" id="number_2" placeholder="number 2"/>
+    <input type="text" class="input" name="number_1" id='number_1'  placeholder="number 1"/> +
+    <input type="text" class="input" name="number_2" id='number_2' placeholder="number 2"/>
     <br>
     <button type="button" id="calculate">Calculate</button>
     <div id="total">
@@ -45,10 +45,12 @@
 
 
   function handleCalculation() {
-    var num1 =document.getElementById('number_1').value;
-    var num2 = document.getElementById('number_2').value;
-    var total = ( num1 + num2);
-    var num1 = document.getElementById('total').innerHTML = total;
+    var x = document.getElementById('number_1').value;
+    var y = document.getElementById('number_2').value;
+    var total =   (parseInt (y) + parseInt (x));
+
+    var answer = document.getElementById('total').innerHTML = total;
+
   }
 
 
