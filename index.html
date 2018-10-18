@@ -2,31 +2,7 @@
 <html>
 <head>
    <title>The Calculator</title>
-   <style>
-     h1{
-       color: pink;
-       padding: 40px;
-       background: blue;
-     }
-   #total{
-     color: blue;
-     margin-top: 50px;
-   }
-   .input{
-     height: 40px;
-     background: yellow;
-     padding: 5px;
-     border-radius: 10px;
-   }
-   button{
-    height: 40px;
-    background:red;
-    padding: 10px;
-    display: block;
-    width: 300px;
-    border-radius: 10px;
-   }
-  </style>
+  <link rel="stylesheet" href="app.css"> 
  </head>
  <body>
  <h1> Calculator </h1>
@@ -38,22 +14,6 @@
 
     </div>
 
-<script>
-
-
-  document.getElementById('calculate').addEventListener('click', handleCalculation)
-
-
-  function handleCalculation() {
-    var x = document.getElementById('number_1').value;
-    var y = document.getElementById('number_2').value;
-    var total =   (parseInt (y) + parseInt (x));
-
-    var answer = document.getElementById('total').innerHTML = total;
-
-  }
-
-
-</script>
-</body>
+<script src="app.js" ></script>
+ </body>
 </html>

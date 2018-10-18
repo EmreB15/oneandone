@@ -1,0 +1,24 @@
+
+  h1{
+    color: pink;
+    padding: 40px;
+    background: blue;
+  }
+#total{
+  color: blue;
+  margin-top: 50px;
+}
+.input{
+  height: 40px;
+  background: yellow;
+  padding: 5px;
+  border-radius: 10px;
+}
+button{
+ height: 40px;
+ background:red;
+ padding: 10px;
+ display: block;
+ width: 300px;
+ border-radius: 10px;
+}
